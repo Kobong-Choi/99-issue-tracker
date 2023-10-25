@@ -4,9 +4,10 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import { AiFillBug } from "react-icons/ai";
-import classNames from "classnames";
+import classNames from "classnames"; // express the conditional classes more simply as an object
 
 const NavBar = () => {
+  // a Client Component hook that lets you read the current URL's pathname.
   const currentPath = usePathname();
 
   const links = [
